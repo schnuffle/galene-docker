@@ -1,6 +1,6 @@
 ARG DIR=/go/src/galene
-ARG VERSION=0.8
-ARG WAIT_VERSION=2.9.0
+ARG VERSION=0.9
+ARG WAIT_VERSION=2.12.1
 
 FROM golang:alpine AS builder
 ARG DIR
@@ -26,7 +26,7 @@ LABEL org.label-schema.schema-version="1.0"
 LABEL org.label-schema.name="galene"
 LABEL org.label-schema.description="Docker image for the Galène videoconference server"
 LABEL org.label-schema.url="http://galena.org/"
-LABEL org.label-schema.vcs-url="https://github.com/deburau/galene"
+LABEL org.label-schema.vcs-url="https://github.com/schnuffle/galene-docker"
 LABEL org.label-schema.vcs-ref="${VCS_REF}"
 LABEL org.label-schema.vendor="jech"
 LABEL org.label-schema.version="${VERSION}"
